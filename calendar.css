@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+}
+
+html,body {
+  font-size: 16px;
+  font-family: sans-serif;
+    width: 100%;
+    height:100%;
+}
+
+.calendar .inactive {
+  color: darkgray;
+  text-decoration: none;
+}
+
+table {
+  height: 94.5vh;
+  margin-bottom: 0 !important;
+}
+
+td {
+  width: 14.28%;
+}
+
+#signup-dialog td {
+  width: 10px;
+}
+
+.today {
+  display: inline-block;
+}
+#prev-month-btn {
+  display: inline-block;
+  margin: 0;
+}
+#next-month-btn {
+  display: inline-block;
+}
+#current-month {
+  display: inline-block;
+}
+#current-year {
+  display: inline-block;
+}
+
+#login-form {
+  display: inline-block;
+}
+
+.event {
+  margin: 0 -4% 0 -4%;
+}
+
+#login-wrapper {
+  display: inline-block;
+  float: right;
+}
+
+
+#loggedin-wrapper {
+  float: right;
+}
+
+.card {
+  border: none;
+  padding: 1% 0 1% 3%;
+  font-size: 13px;
+}
+
+nav {
+  padding: 1.5% 1% 1% 1%;
+}
+
+body:not([data-username="guest"]) .guest-only {
+  display: none !important;
+}
+
+body[data-username="guest"] .authenticated-only {
+  display: none !important;
+}
+
+.welcome-msg {
+  display: inline-block;
+  padding-right: 20px;
+}
+
+.btn {
+  margin-right: 10px;
+}
+
+#show-sign-upp {
+  float: right;
+}
+
+
+
+@media (min-width:751px) {
+  .abbr {display:none}
+  .full {display:inline-block}
+}
+
+@media (max-width:750px) {
+  .abbr {display:inline-block}
+  .full {display:none}
+  .table {
+    width: 100vw;
+  }
+  body {
+    font-size: 90%;
+  }
+
+  #loggedin-wrapper {
+    position: fixed;
+    bottom: 8px;
+    left: 8px;
+  }
+
+  .welcome-msg {
+    display: none;
+  }
+
+  #login-wrapper {
+    display: block;
+    float: unset;
+  }
+  .form-inline {
+    display: block;
+  }
+}
+
+@media (max-width:414px){
+   tbody tr {
+    height: 131px;
+  }
+}
+
+@media (max-width:375px){
+  tbody tr {
+    height: 105px;
+  }
+
+}
+
+@media (max-width:360px){
+  tbody tr {
+    height: 95px;
+  }
+  table {
+    height: 93vh;
+  }
+}
+
+@media (max-width:320px){
+  tbody tr {
+    height: 80px;
+  }
+  body {
+    font-size: 80%;
+  }
+}
